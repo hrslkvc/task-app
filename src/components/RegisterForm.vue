@@ -52,7 +52,6 @@
                 >
                     Submit
                 </button>
-                <div>{{ response }}</div>
             </form>
         </div>
     </div>
@@ -67,7 +66,6 @@ export default {
             email: null,
             password: null,
             first_name: null,
-            response: 'abc',
         };
     },
     methods: {
@@ -84,7 +82,6 @@ export default {
                     this.response = res.data;
                 })
                 .catch(res => (this.response = JSON.stringify(res)));
-            console.log(this.email);
         },
     },
 };

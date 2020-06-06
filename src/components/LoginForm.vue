@@ -42,17 +42,15 @@
                         </button>
                     </div>
                 </div>
-                <div class="field">
-                    <div class="control has-text-centered">
-                        <p>
-                            Don't have an account?
-                            <router-link :to="{ name: 'register' }"
-                                >Register</router-link
-                            >
-                        </p>
-                    </div>
-                </div>
             </form>
+            <div class="register-link">
+                <p>
+                    Don't have an account?
+                    <router-link :to="{ name: 'register' }"
+                        >Register</router-link
+                    >
+                </p>
+            </div>
         </div>
     </div>
 </template>
@@ -83,3 +81,8 @@ export default {
     },
 };
 </script>
+<style>
+.register-link {
+    margin-top: 70px;
+}
+</style>
