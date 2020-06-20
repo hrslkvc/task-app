@@ -71,7 +71,7 @@ export default {
     methods: {
         handleSubmit() {
             apiService
-                .post('users', {
+                .post('auth/register', {
                     password: this.password,
                     email: this.email,
                     name: this.first_name,
