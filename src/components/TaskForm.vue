@@ -39,7 +39,7 @@ export default {
                 .post('tasks', { description: this.taskDescription })
                 .then(() => {
                     this.taskDescription = null;
-                    this.$root.$emit('newTaskCreated');
+                    this.$root.$emit('tasksUpdated');
                 });
         },
     },

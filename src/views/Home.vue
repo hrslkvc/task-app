@@ -13,10 +13,7 @@
                 </div>
             </div>
             <div class="column is-half">
-                <div class="box">
-                    <h4 class="title is-4">My Tasks</h4>
-                    <TaskList />
-                </div>
+                <Tasks />
             </div>
         </div>
     </div>
@@ -24,12 +21,12 @@
 
 <script>
 import TaskForm from '@/components/TaskForm';
-import TaskList from '@/components/TaskList';
+import Tasks from '@/components/Tasks';
 export default {
     name: 'Home',
     components: {
         TaskForm,
-        TaskList,
+        Tasks,
     },
 };
 </script>
